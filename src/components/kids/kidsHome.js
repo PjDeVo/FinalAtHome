@@ -5,9 +5,9 @@ class KidsHome extends Component {
       return (
         <div className = 'kids-home'>
           
-          <h1> Grindhouse Future Champs</h1>
+          <h1> Future Champs of Grindhouse MMA</h1>
          
-          <div className = 'kids-home__images'>
+          <div className = {`${'kids-home__images'} image-one`}>
             <img className = 'kids-home__image' src = {require('../../../static/assets/Grindhouse/flexwithkids.jpg')} />
             <img className = 'kids-home__image' src = {require('../../../static/assets/Grindhouse/stripekids.jpg')}/>
             <img className = 'kids-home__image' src = {require('../../../static/assets/Grindhouse/kidschoke.jpg')}/>

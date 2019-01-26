@@ -5,7 +5,7 @@
     justify-items: center;
   
 
-    grid-template-rows: 50px [title-s] 50px [ title-e little-s] 1fr [little-e big-s ]1fr [big-e description-s] 1fr [description-e];
+    grid-template-rows: 50px [title-s] 50px [ title-e little-s] 1fr [little-e big-s ].5fr [big-e description-s] .5fr [description-e];
     grid-template-columns: [s] 1fr [e];
     grid-row-gap: 40px;
     border: 1px solid #ffdb4d;
@@ -15,6 +15,7 @@
         grid-column: s/e;
         font-weight: 600;
         font-size: 40px;
+        text-decoration: underline;
     }
     
     
@@ -48,9 +49,9 @@
         grid-column: s/e;
         font-size: 20px;
         justify-self: center;
-        width: 600px; 
+        width: 900px; 
         height: 390px;
-        border: 1px solid #ffdb4d;
+        border: .5px solid #ffdb4d;
         align-self: center;
         margin-bottom: 20px;
     }

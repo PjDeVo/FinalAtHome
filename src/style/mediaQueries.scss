@@ -1,151 +1,176 @@
-/* media queries for small screens start*/
+ /*media queries for small screens start*/
 
+
+
+
+.body {
+    @media  (min-width: 320px) and (max-width: 600px) {
+    margin: 0 auto;
+    width: 70%;
+    clear: both;
+  }
+}
 
 .home {
-  @media screen and (min-width: 320px) and (max-width: 500px) {
-    display: grid;
-    grid-template-rows: [logo-s] 0.3fr [logo-e bjj-s] 1fr [bjj-e thai-s] 0.3fr [thai-s header-s] 0.2fr [header-e footer-s] 0.3fr [footer-e];
-    grid-template-columns: 0.2fr [s] 1fr [e] 0.2fr;
-    justify-items: center;
-    height: 100%vh;
-    width: 100%vw;
-    img {
-      grid-row: logo-s/logo-e;
-      grid-column: s/e;
-      width: 80%;
+  @media  (min-width: 320px) and (max-width: 600px) {
+    
+    padding: 20px;
+    &__image {
+      height: 250px;
+      width: 360px;
+
+      
     }
-
-    &__form-bjj {
-      grid-row: bjj-s/bjj-e;
-      grid-column: s/e;
-
-      h1 {
-        margin-left: 10%;
-      }
-      img {
-        width: 95%;
-        height: 90%;
-      }
-    }
-
-    &__form-thai {
-      grid-row: thai-s/thai-e;
-      grid-column: s/e;
-
-      img {
-        width: 93%;
-      }
-    }
-
     &__announcements-header {
-      grid-row: announcements-s/announcements-e;
-      grid-column: s/e;
-      align-self: start;
-
-      font-size: 60px;
+      font-size: 35px;
     }
+   
   }
 }
 
 .home-form {
-  @media screen and (min-width: 320px) and (max-width: 500px) {
-    display: inline-block;
-    flex-wrap: wrap;
-    height: 40%;
-    width: auto;
-    justify-content: center;
-
+  @media  (min-width: 320px) and (max-width: 600px) {
+    display: grid;
+    grid-template-rows: [title-s].5fr [title-e photo-s]1fr [photo-e text-s]1fr [text-e]; 
+    grid-template-columns: [s] 1fr [e];
     &__title {
+      font-size: 30px;
+      display: grid;
       grid-row: title-s/title-e;
       grid-column: s/e;
-      justify-items: center;
-      padding: 3%;
+      justify-content: center;
+      
+      
     }
+
     &__image {
-      grid-row: image-s/image-e;
+      display: grid;
+      grid-row: photo-s/photo-e;
       grid-column: s/e;
-      height: 80%;
-      width: auto;
-      margin-bottom: 5%;
+      width: 60%;
+      
+      
+
     }
+
     &__content {
       display: grid;
-      grid-row: content-s/content-e;
+      grid-row: text-s/text-e;
       grid-column: s/e;
-      margin-left: 15%;
-      height: 20%;
-      font-size: 20px;
+      width: 50%;
+      justify-self: center;
+      font-size: 16px;
     }
-  }
-}
-
-.announcements {
-  @media screen and (min-width: 320px) and (max-width: 500px) {
-    display: grid;
-
-    justify-content: space-between;
-    grid-column: s/e;
-    width: auto;
-    height: 40%;
-  }
-}
-
-.announcements__articles {
-  @media screen and (min-width: 320px) and (max-width: 500px) {
-    width: 30%;
-    height: auto;
-    margin: 20px;
-
-    img {
-      width: 90%;
-      height: auto;
-    }
-
-    &-information {
-      margin-bottom: 20%;
-      margin-top: 0;
-    }
-  }
-}
-
-.footer {
-  @media screen and (min-width: 320px) and (max-width: 500px) {
-    grid-row: footer-s/footer-e;
-    grid-column: s/e;
   }
 }
 
 .nav-wrapper {
-  @media screen and (min-width: 320px) and (max-width: 500px) {
-    width: auto;
-    display: inline-block;
-    justify-self: center;   
-    background-color: grey;
-    height: 200px;
-    width: 405px;
-    justify-content: center;
-    border: 1px solid black;
+  @media  (min-width: 320px) and (max-width: 600px) {
+   display: none;
   }
 }
 
-.nav-link-wrapper__home a, 
-.nav-link-wrapper__meet a,
-.nav-link-wrapper__kids a,
-.nav-link-wrapper__schedule a,
-.nav-link-wrapper__contact a, 
-{
-  @media screen and (min-width: 320px) and (max-width: 500px) {
-    display: flex;
-    font-size: 22px;
-    font-weight: 300;
-    justify-content: center;
+
+.announcements {
+  @media  (min-width: 320px) and (max-width: 600px) {
     
-    
-    
+
+  
+  display: inline-block;
+  justify-self: start;
+  margin-left: 80px;
+  width: 40%;
+  }
+
+}
+
+.footer {
+  @media  (min-width: 320px) and (max-width: 600px) {
+    display: none;
+
   }
 }
 
+
+.kids-home {
+  @media  (min-width: 320px) and (max-width: 600px) {
+   
+    padding: 20px;
+    display: grid;  
+    grid-row: content-s/content-e;
+    grid-column: s/e;
+    justify-items: center;
+  
+
+    grid-template-rows: 50px [title-s] 50px [ title-e little-s] 1fr [little-e big-s ].2fr [big-e description-s] .5fr [description-e];
+    grid-template-columns: [s] 1fr [e];
+ 
+
+    &__images {
+      display: grid;
+      grid-row: little-s/little-e;
+      grid-column: 1/-1;
+      img {
+      height: 300px;
+      width: 300px;
+      }
+    }
+
+    &__title {
+      
+      grid-row: title-s/title-e;
+      grid-column: 1/-1;
+      justify-self: center;
+      
+    }
+
+    
+
+    h1 {
+      font-size: 22px;
+      
+    }
+
+    &__main-image {
+      img {
+        height: 300px;
+        width: 400px;
+      }
+    }
+    &__main-description {
+      display: grid;
+      
+
+      width: 400px;
+      p {
+        font-size: 14px;
+      }
+     
+    }
+
+    
+}
+
+
+}
+
+.schedule {
+
+  @media  (min-width: 320px) and (max-width: 600px) {
+    display: grid;
+    justify-content: center;
+    img {
+      border-radius: 15px;
+        height: 350px;
+        width: 100vw;
+        
+    }
+
+    p {
+      font-size: 12px;
+      width: 200px;
+    }
+  }
+
+}
 /* media queries for small screens end*/
-
-
-

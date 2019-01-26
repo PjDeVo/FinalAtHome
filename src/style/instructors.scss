@@ -1,4 +1,5 @@
 .instructors-page {
+  padding: 40px;
   display: grid;
   grid-row: content-s/content-e;
 
@@ -16,7 +17,7 @@
     grid-column: one-s/one-e;
 
 
-    @media screen and (min-width: 320px) and (max-width: 500px) {
+    @media screen and (min-width: 320px) and (max-width: 600px) {
       grid-row: james-s/james-e;
       grid-column: s/e;
     }
@@ -27,14 +28,14 @@
     grid-column: two-s/two-e;
 
 
-    @media screen and (min-width: 320px) and (max-width: 500px) {
+    @media screen and (min-width: 320px) and (max-width: 600px) {
       grid-row: matt-s/matt-e;
       grid-column: s/e;
     }
   }
 
   &__sean {
-    @media screen and (min-width: 320px) and (max-width: 500px) {
+    @media screen and (min-width: 320px) and (max-width: 600px) {
       grid-row: sean-s/sean-e;
       grid-column: s/e;
     }
@@ -45,7 +46,7 @@
   }
 
   &__pat {
-    @media screen and (min-width: 320px) and (max-width: 500px) {
+    @media screen and (min-width: 320px) and (max-width: 600px) {
       grid-row: pat-s/pat-e;
       grid-column: s/e;
     }
@@ -65,12 +66,12 @@
     margin: 30px;
 
 
-    @media screen and (min-width: 320px) and (max-width: 500px) {
+    @media screen and (min-width: 320px) and (max-width: 600px) {
       display: inline-block;
     }
 
     img {
-      @media screen and (min-width: 320px) and (max-width: 500px) {
+      @media screen and (min-width: 320px) and (max-width: 600px) {
         height: 300px;
         width: 350px;
       }
@@ -84,7 +85,7 @@
     padding: 10px;
     margin: 20px;
   }
-  @media screen and (min-width: 320px) and (max-width: 500px) {
+  @media screen and (min-width: 320px) and (max-width: 600px) {
     display: grid;
     grid-template-columns: [s] 1fr [e];
     grid-template-rows: [james-s] 1fr [james-e matt-s] 1fr [matt-e sean-s]1fr [sean-e pat-s]1fr [pat-e];
@@ -120,7 +121,7 @@
   &__image {
     height: 380px;
     width: 450px;
-    @media screen and (min-width: 320px) and (max-width: 500px) {
+    @media screen and (min-width: 320px) and (max-width: 600px) {
       width: 350px;
     }
 
@@ -132,13 +133,13 @@
     }
   }
 
-  @media screen and (min-width: 320px) and (max-width: 500px) {
+  @media screen and (min-width: 320px) and (max-width: 600px) {
     min-width: 300px;
     max-width: 400px;
     min-height: 650px;
 
     &__content {
-     max-width: 500px;
+     max-width: 600px;
     }
   }
 }

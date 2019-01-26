@@ -1,9 +1,12 @@
 .home {
     display: grid;
+    
     color: #ffdb4d;
     font-size: 15px;
     grid-row: content-s/content-e;
-    grid-column: 1/-1;
+    grid-column: s/e;
+    justify-self: center;
+    
    
     
 
