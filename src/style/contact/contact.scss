@@ -10,6 +10,8 @@
 
     grid-template-rows: [files-s]3.5fr [files-s info-s]1fr [info-e];
     grid-template-columns: [s] 1fr [m] 1fr [e];
+    grid-column-gap: 200px; 
+   
 
 
 }
@@ -47,8 +49,9 @@
 .contact__info {
     grid-row: info-s/info-e;
     grid-column: s/m;
-    justify-self:center; 
+    justify-self: end; 
     align-self: center;
+   
     
 }
 
@@ -56,8 +59,9 @@
     display: grid;
     grid-row: info-s/info-e;
     grid-column: m/e;
-    justify-self: center;
+    justify-self: start;
     align-self: center;
+    
     
 }
 

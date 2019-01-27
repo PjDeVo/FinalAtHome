@@ -6,9 +6,9 @@
   
 
     grid-template-rows: 50px [title-s] 50px [ title-e little-s] 1fr [little-e big-s ].5fr [big-e description-s] .5fr [description-e];
-    grid-template-columns: [s] 1fr [e];
+    grid-template-columns: .2fr [s] 1fr [e] .2fr;
     grid-row-gap: 40px;
-    border: 1px solid #ffdb4d;
+ 
     
     h1 {
         grid-row: title-s/title-e;
