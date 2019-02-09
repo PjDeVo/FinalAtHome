@@ -1,5 +1,5 @@
 .instructors-page {
-  padding: 40px;
+
   display: grid;
   grid-row: content-s/content-e;
 
@@ -7,71 +7,93 @@
   align-items: start;
   justify-items: center;
 
-  grid-template-rows: [first-s] 1fr [first-e second-s] 1fr [second-e images-s] 0.5fr [images-e];
-  grid-template-columns: 200px [one-s] 1fr [one-e two-s] 1fr [two-e] 200px;
-  grid-column-gap: 30px;
+  grid-template-rows: [title-s] 60px [title-e james-s]1fr [james-e matt-s]1fr [matt-e sean-s]1fr [sean-e pat-s] 1fr [pat-e images-s] 1fr [images-e];
+  grid-template-columns: [s] 1fr [e];
+  grid-row-gap: 50px;
+
+  &__title {
+    grid-row: title-s/title-e;
+    grid-column: s/e;
+    
+    
+    h1 {
+      font-size: 35px;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    @media screen and (min-width: 320px) and (max-width: 500px) {
+
+      grid-row: title-s;
+      grid-column: s/e;
+      justify-items: center;
+
+    }
+
+  }
   
 
   &__james {
-    grid-row: first-s/first-e;
-    grid-column: one-s/one-e;
+    grid-row: james-s/james-e;
+    grid-column: s/e;
 
 
-    @media screen and (min-width: 320px) and (max-width: 600px) {
+    @media screen and (min-width: 320px) and (max-width: 500px) {
       grid-row: james-s/james-e;
       grid-column: s/e;
     }
   }
 
   &__matt {
-    grid-row: first-s/first-e;
-    grid-column: two-s/two-e;
+    grid-row: matt-s/matt-e;
+    grid-column: s/e;
 
 
-    @media screen and (min-width: 320px) and (max-width: 600px) {
+    @media screen and (min-width: 320px) and (max-width: 500px) {
       grid-row: matt-s/matt-e;
       grid-column: s/e;
     }
   }
 
   &__sean {
-    @media screen and (min-width: 320px) and (max-width: 600px) {
+    @media screen and (min-width: 320px) and (max-width: 500px) {
       grid-row: sean-s/sean-e;
       grid-column: s/e;
     }
 
 
-    grid-row: second-s/second-e;
-    grid-column: one-s/one-e;
+    grid-row: sean-s/sean-e;
+    grid-column: s/e;
   }
 
   &__pat {
-    @media screen and (min-width: 320px) and (max-width: 600px) {
+    @media screen and (min-width: 320px) and (max-width: 500px) {
       grid-row: pat-s/pat-e;
       grid-column: s/e;
     }
 
 
-    grid-row: second-s/second-e;
-    grid-column: two-s/two-e;
+    grid-row: pat-s/pat-e;
+    grid-column: s/e;
   }
 
   &__images {
     grid-row: images-s/image-s;
     grid-column: 1/-1;
-    display: grid;
+    display:flex;
+    flex-wrap: wrap;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(5, 1fr);
     border: 1px solid #ffdb4d;
     margin: 30px;
+    
 
 
-    @media screen and (min-width: 320px) and (max-width: 600px) {
+    @media screen and (min-width: 320px) and (max-width: 500px) {
       display: inline-block;
     }
 
     img {
-      @media screen and (min-width: 320px) and (max-width: 600px) {
+      @media screen and (min-width: 320px) and (max-width: 500px) {
         height: 300px;
         width: 350px;
       }
@@ -85,12 +107,11 @@
     padding: 10px;
     margin: 20px;
   }
-  @media screen and (min-width: 320px) and (max-width: 600px) {
+  @media screen and (min-width: 320px) and (max-width: 500px) {
     display: grid;
     grid-template-columns: [s] 1fr [e];
-    grid-template-rows: [james-s] 1fr [james-e matt-s] 1fr [matt-e sean-s]1fr [sean-e pat-s]1fr [pat-e];
+    grid-template-rows: [title-s] 60px [title-e james-s] 1fr [james-e matt-s] 1fr [matt-e sean-s]1fr [sean-e pat-s]1fr [pat-e];
     justify-content: center;
-    width: 600px;
   }
 }
 
@@ -101,27 +122,29 @@
   grid-row-gap: 20px;
   
   justify-items: center;
-  border: 1px solid #ffdb4d;
-  max-height: 700px;
-  max-width: 600px;
-  min-width: 500px;
+  height: 900px;
+
+
   
 
   &__title {
     justify-self: center;
     font-size: 40px;
     color: #ffdb4d;
+    
   }
 
   &__content {
     color: #ffdb4d;
     font-size: 16px;
     padding: 20px;
+    width: 700px;
+    
   }
   &__image {
-    height: 380px;
-    width: 450px;
-    @media screen and (min-width: 320px) and (max-width: 600px) {
+    height: 500px;
+    width: 650px;
+    @media screen and (min-width: 320px) and (max-width: 500px) {
       width: 350px;
     }
 
@@ -133,13 +156,14 @@
     }
   }
 
-  @media screen and (min-width: 320px) and (max-width: 600px) {
+  @media screen and (min-width: 320px) and (max-width: 500px) {
     min-width: 300px;
     max-width: 400px;
     min-height: 650px;
 
     &__content {
-     max-width: 600px;
+     max-width: 300px;
     }
   }
 }
+

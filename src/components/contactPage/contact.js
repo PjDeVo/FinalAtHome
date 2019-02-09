@@ -3,6 +3,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import ContactForm from './contactForm';
 
 library.add(faPhone)
 library.add(faMapMarkerAlt)
@@ -18,7 +19,7 @@ class Contact extends Component {
         return(
             <div className = 'contact-wrapper'>
                 <div className = 'contact-forms__wrapper'>
-                    <img src = 'http://via.placeholder.com/1000x400'/>
+                    <ContactForm/>
                     <div className = 'contact__map'>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.1993604607846!2d-75.01531538429577!3d40.160114779129614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6ad9fe0b32bed%3A0x3a6dd747e6e637ac!2sGrindhouse+MMA+%26+Fitness!5e0!3m2!1sen!2sus!4v1548039573988" width="996" height="450" ></iframe>
 
@@ -52,5 +53,4 @@ class Contact extends Component {
         )
     }
 }
-
 export default Contact;

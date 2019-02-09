@@ -1,72 +1,77 @@
 .nav-wrapper {
-    display: grid;
-    grid-row: navbar-s/navbar-e;
-    grid-column: s/e;
+  display: grid;
+  grid-row: navbar-s/navbar-e;
+  grid-column: s/e;
 
-    background-color: #333;
-  
-    height: 100px;
+  background-color: #333;
 
-    
-
-    grid-template-rows: [s] 1fr [e];
-    grid-template-columns: [home-s] 1fr [home-e meet-s] 1fr [meet-e kids-s] 1fr [kids-e schedule-s] 1fr [schedule-e contact-s] 1fr [contact-e] ;
-    justify-items: center;
-    align-items: center;
-    width: 80%;
-    
-  
-
-    color: #ffdb4d;;
-    justify-content: center;
-    justify-self: center;
-    
- 
+  height: 100px;
+  width: 90%;
 
   
-    a {
-        color: #ffdb4d;
-        font-size: 24px;
-        font-weight:600;
-        
-    }
+
+  grid-template-rows: [s] 1fr [e];
+  grid-template-columns: [home-s] 1fr [home-e meet-s] 1fr [meet-e kids-s] 1fr [kids-e schedule-s] 1fr [schedule-e contact-s] 1fr [contact-e] ;
+  justify-items: center;
+  align-items: center;
+  width: mixmax(600px, 2500px);
+  
+
+
+  color: #ffdb4d;;
+  justify-content: center;
+  justify-self: center;
+  
+
+
+
+  a {
+      color: #ffdb4d;
+      font-size: 24px;
+      font-weight:600;
+      width: 200px;
+      
+  }
+  @media only screen and (min-width : 768px) and (max-width : 1024px) {
+    width: 90%;
+  }
 }
 
 .nav-link-wrapper {
-    display: grid;
-    color: #ffdb4d;
-    
+  display: grid;
+  color: #ffdb4d;
 
-    &__meet {
-        grid-column: meet-s/meet-e;
-       
-       
-      }
-    
-      &__home {
-        grid-column: home-s/home-e;
-      }
-    
-      &__kids {
-        grid-column: kids-s/kids-e;
-      }
-    
-      &__schedule {
-        grid-column: schedule-s/schedule-e;
-      }
-    
-      &__contact {
-        grid-column: contact-s/contact-e;
-      }
-      & > * {
-        grid-row: s/e;
-        
-      }
+  
 
-    
+  &__meet {
+      grid-column: meet-s/meet-e;
+     
+     
+    }
+  
+    &__home {
+      grid-column: home-s/home-e;
+    }
+  
+    &__kids {
+      grid-column: kids-s/kids-e;
+    }
+  
+    &__schedule {
+      grid-column: schedule-s/schedule-e;
+    }
+  
+    &__contact {
+      grid-column: contact-s/contact-e;
+    }
+    & > * {
+      grid-row: s/e;
+      
+    }
+
+  
 }
 
 .nav-link-active {
-    text-decoration: underline;
-  }
-
+  text-decoration: underline;
+}

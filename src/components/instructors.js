@@ -5,7 +5,12 @@ import InstructorsLayout from './instructorsLayout';
 class Instructors extends Component {
     render() {
         return(
+            
             <div className = 'instructors-page'>
+
+                <div className = 'instructors-page__title'>
+                    <h1> Meet The Instructors</h1>
+                </div>
                 <InstructorsLayout
                     className = 'instructors-page__james'
                     image = {require('../../static/assets/Grindhouse/james.jpg')}

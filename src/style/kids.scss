@@ -5,17 +5,16 @@
     justify-items: center;
   
 
-    grid-template-rows: 50px [title-s] 50px [ title-e little-s] 1fr [little-e big-s ].5fr [big-e description-s] .5fr [description-e];
-    grid-template-columns: .2fr [s] 1fr [e] .2fr;
+    grid-template-rows: 50px [title-s] 50px [ title-e little-s] 1fr [little-e big-s ]1fr [big-e description-s] 1fr [description-e];
+    grid-template-columns: [s] 1fr [e];
     grid-row-gap: 40px;
- 
+    border: 1px solid #ffdb4d;
     
     h1 {
         grid-row: title-s/title-e;
         grid-column: s/e;
         font-weight: 600;
         font-size: 40px;
-        text-decoration: underline;
     }
     
     
@@ -23,13 +22,15 @@
         grid-row: little-s/little-e;
         grid-column: s/e;
         
+        
 
 
         
         img {
             height: 300px;
             width: 300px;
-            padding: 40px;
+            padding: 30px;
+
             
         }
     }
@@ -49,9 +50,9 @@
         grid-column: s/e;
         font-size: 20px;
         justify-self: center;
-        width: 900px; 
+        width: 600px; 
         height: 390px;
-        border: .5px solid #ffdb4d;
+        border: 1px solid #ffdb4d;
         align-self: center;
         margin-bottom: 20px;
     }
