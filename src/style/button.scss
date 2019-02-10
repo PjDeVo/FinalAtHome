@@ -1,0 +1,17 @@
+.button-wrapper {
+    display: grid;
+    grid-row: message-s/message-e;
+    grid-column: s/e;
+    justify-content: end;
+    align-content: end;
+   
+}
+.button {
+    height: 3rem;
+    width: 7rem;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 20px; 
+    margin-right: 10px;
+    margin-bottom: 10px;    
+}

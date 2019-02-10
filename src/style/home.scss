@@ -22,8 +22,9 @@
     &__image {
 
         
-        height: 400px;
-        width: 800px;
+        width: auto;
+        max-width: 75%;
+        display: block;
     }
 
    &__form-bjj {

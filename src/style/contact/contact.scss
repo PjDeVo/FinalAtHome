@@ -25,6 +25,39 @@
     
 }
 
+
+
+.contact-form {
+    display: grid;
+    justify-content: center;
+    height: 30rem;
+
+    grid-template-columns:[s] 1fr [e]; 
+    grid-template-rows: [name-s] 1fr [name-e email-s] 1fr [email-e message-s] 1fr [message-e];
+
+    &__name {
+        grid-row: name-s/name-e;
+        grid-column: s/e;
+    }
+
+    &__email {
+        grid-row: email-s/email-e;
+        grid-column: s/e;
+        height: 30%;
+        width: 20%;
+
+    }
+
+    &__message {
+        grid-row: message-s/message-e;
+        grid-column: s/e;
+        width: 99.7%;
+        height: 150%;
+        align-items: start;
+
+    }
+}
+
 .contact__phone {
     padding: 20px;
     font-size: 40px;

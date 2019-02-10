@@ -13,29 +13,33 @@ class Announcements extends Component {
         const {src} = this.props;
         return(
             
-            
-            <div className = 'announcements'>
-                 {console.log("Props", this.props)}
+            <div className = 'announcements-wrapper'>
+
+                <div className = 'announcements'>
                  
-               {
-                   this.props.announcements.map((announcement) => {
-                       return (
-                           <div className = 'announcements__articles'>
-                                <div className = 'announcements__articles-imageUrl'>
-                                     <img src = {announcement.imageUrl} />
-                                </div>
-                               <div className = 'announcements__articles-title'>
-                                    {announcement.title}
-                               </div>
-                               <div className = 'announcements__articles-information'>
-                                    {announcement.information}
-                               </div>
-                           </div>
-                       )
-                   })
-               }    
+                 
+                 {
+                     this.props.announcements.map((announcement) => {
+                         return (
+                             <div className = {`announcements__${announcement._id}`}>
+                                  <div className = 'announcements__imageUrl'>
+                                       <img src = {announcement.imageUrl} />
+                                  </div>
+                                 <div className = 'announcements__title'>
+                                      {announcement.title}
+                                 </div>
+                                 <div className = 'announcements__information'>
+                                      {announcement.information}
+                                 </div>
+                             </div>
+                         )
+                     })
+                 }    
+  
+                </div>
 
             </div>
+         
         )
     }
 }

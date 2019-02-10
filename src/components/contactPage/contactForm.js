@@ -8,11 +8,29 @@ class ContactForm extends Component {
     render() {
         return(
             <form className = 'contact-form'>
-                <Field 
+             <Field 
+                className = 'contact-form__name'
+                placeholder = 'Name'
+                type = 'name'
+                name = 'name'
+                title = "Name"
                 component = {FormInput}
-                name = 'email'
+                />
+                <Field 
+                className = 'contact-form__email'
+                placeholder = 'Email'
                 type = 'email'
-                
+                name = 'email'
+                title = "Email"
+                component = {FormInput}
+                />
+                <Field 
+                className = 'contact-form__message'
+                placeholder = 'Message'
+                type = 'message'
+                name = 'message'
+                title = "Message"
+                component = {FormInput}
                 />
             </form>
         )

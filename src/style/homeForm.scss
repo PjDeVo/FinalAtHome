@@ -1,8 +1,10 @@
 .home-form {
   display: grid;
   grid-template-rows: [title-s]150px [title-e content-s] 1fr [content-e];
-  grid-template-columns: 20%[image-s] 1fr [image-e] 40px [text-s] 1fr [text-e]200px;
+  grid-template-columns: 20%[image-s] 1fr [image-e] 40px [text-s] 1fr [text-e]20%;
   justify-content: center;
+  max-height: 1500px;
+  max-width: 1500px;
   
   
   
@@ -26,8 +28,9 @@
 
   &__content {
     font-size: 1.8rem;
-    max-width: 500px;
-    min-width: 300px;
+    width: 80%;
+    height: auto;
+
     grid-row: content-s/content-e;
     grid-column: text-s/text-e;
   }

@@ -22,10 +22,11 @@ class Home extends Component {
                     content = {" Here is the content for the Muay Thai description on the homepage Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "}
                     image = {require('../../../static/assets/Grindhouse/thai.jpg')}
                  />
+                 <div className = 'home__announcements-wrapper'>
 
-                 <h1 className = 'home__announcements-header'>Announcements</h1>
 
-                 <Announcements className = 'home__announcements'/>
+                    <Announcements className = 'home__announcements'/>
+                </div>
 
             </div>
                         
