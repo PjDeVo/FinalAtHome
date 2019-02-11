@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {reduxForm, Field} from 'redux-form';
 
-import formInput, { FormInput } from '../formFields';
+import { FormInput, FormTextArea } from '../formFields';
 
 class ContactForm extends Component {
 
@@ -18,7 +18,7 @@ class ContactForm extends Component {
                 />
                 <Field 
                 className = 'contact-form__email'
-                placeholder = 'Email'
+                placeholder = 'Example@Gmail.com'
                 type = 'email'
                 name = 'email'
                 title = "Email"
@@ -26,11 +26,11 @@ class ContactForm extends Component {
                 />
                 <Field 
                 className = 'contact-form__message'
-                placeholder = 'Message'
+                placeholder = 'Send Us A Message'
                 type = 'message'
                 name = 'message'
                 title = "Message"
-                component = {FormInput}
+                component = {FormTextArea}
                 />
             </form>
         )

@@ -24,10 +24,12 @@
  
  
 }
+
+
 }
 
 .home-form {
-@media  (min-width: 320px) and (max-width: 600px) {
+@media  (min-width: 320px) and (max-width: 1300px) {
   display: grid;
   grid-template-rows: [title-s].5fr [title-e photo-s]1fr [photo-e text-s]1fr [text-e]; 
   grid-template-columns: [s] 1fr [e];

@@ -1,10 +1,45 @@
 .form-input {
     font-size: 16px;
     margin: 20px;
+    justify-content: start;
+    
+    
 
     &__input {
-        color: red;
-        align-self: start;
+        align-items: start;
+        input {
+            color: blue;
+        }
+        
+        // color: red;
+
+    input {
+        display: table-cell;
+        vertical-align: top;
+    }        
+        
+       
     }
 
+}
+
+.form-textarea {
+    display: grid;
+    grid-row: message-s/message-e;
+        grid-column: s/e;
+        width: 99.7%;
+        height: 100%;
+        align-items: start;
+    &__title {
+        align-self: start;
+        font-size: 16px;
+        padding: 20px;
+    }
+    &__input {
+        resize: none;
+        
+        padding: 1rem;
+        height: 160px;
+        font-size: 16px;
+    }
 }

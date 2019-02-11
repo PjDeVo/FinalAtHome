@@ -10,6 +10,10 @@
     grid-template-rows: [files-s]3.5fr [files-s info-s]1fr [info-e];
     grid-template-columns: [s] 1fr [m] 1fr [e];
     grid-column-gap: 200px; 
+    
+    
+   
+   
    
 
 
@@ -21,7 +25,8 @@
     grid-column: s/e;
     justify-self: center;
     border: 1px solid #ffdb4d;
-    height: 854px;
+    height: 960px;
+    background-color: #ffdb4d;
     
 }
 
@@ -30,17 +35,27 @@
 .contact-form {
     display: grid;
     justify-content: center;
-    height: 30rem;
 
     grid-template-columns:[s] 1fr [e]; 
-    grid-template-rows: [name-s] 1fr [name-e email-s] 1fr [email-e message-s] 1fr [message-e];
+    grid-template-rows: [name-s] .5fr [name-e email-s] .5fr [email-e message-s] 1fr [message-e];
+    background-color: grey;
+    align-items: center;
+    
+
+    label {
+        margin-right: 20px;
+    }
 
     &__name {
+        display: grid;
         grid-row: name-s/name-e;
         grid-column: s/e;
+
+        
     }
 
     &__email {
+        display: grid;
         grid-row: email-s/email-e;
         grid-column: s/e;
         height: 30%;
@@ -48,16 +63,18 @@
 
     }
 
-    &__message {
-        grid-row: message-s/message-e;
-        grid-column: s/e;
-        width: 99.7%;
-        height: 150%;
-        align-items: start;
+    &__name.form-input__input,
+    &__email.form-input__input, {
+        height: 30px;
+        width: 40%;
 
+        
     }
+
+       
 }
 
+   
 .contact__phone {
     padding: 20px;
     font-size: 40px;
@@ -114,3 +131,4 @@ p {
     font-size: 20px;
     margin: 7px;
 }
+
